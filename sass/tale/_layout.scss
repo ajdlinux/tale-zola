@@ -20,6 +20,7 @@ footer,
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
+  background-color: $contrast-background;
 
   &-container {
     margin: 1rem auto;
@@ -29,7 +30,7 @@ footer,
 
   &-title {
     @include transition(all .2s ease-out);
-    color: $default-color;
+    color: $contrast-color;
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
@@ -49,7 +50,7 @@ footer,
 
   li {
     @include transition(all .2s ease-out);
-    color: $default-color;
+    color: $contrast-color;
     display: inline-block;
     opacity: .6;
     padding: 0 2rem 0 0;
@@ -65,7 +66,7 @@ footer,
   }
 
   a {
-    color: $default-color;
+    color: $contrast-color;
     font-family: $sans-serif;
   }
 }
