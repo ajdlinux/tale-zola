@@ -1,5 +1,5 @@
 {% if page.extra.disqus or config.extra.disqus -%}
-	<script src="{{ get_url(path=" assets/js/disqusLoader.js") | safe }}"></script>
+	<script src="{{ get_url(path="assets/js/disqusLoader.js") | safe }}"></script>
 	<div id="disqus_thread">
 		<h3>{{ config.extra.expressions.disqus_discussion | default(value="Discussion and feedback") }}</h3>
 	</div>
