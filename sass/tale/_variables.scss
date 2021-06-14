@@ -13,11 +13,16 @@ $contrast-color: #eee !default;
 $contrast-background: #333 !default;
 
 // Fonts
-$serif-primary: 'Libre Baskerville', 'Times New Roman', Times, "Source Serif Pro", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", '微软雅黑', '思源黑体', SYHT, "WenQuanYi Micro Hei", serif !default;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
-$sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
-$monospaced: Menlo, Monaco, monospace !default;
-$code-font: 400 1.125rem/1.75 SFMono-Regular, Consolas, Liberation Mono,Menlo, monospace;
+
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,700;1,300;1,700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+
+$serif-primary: 'IBM Plex Serif', 'Libre Baskerville', 'Times New Roman', Times, "Source Serif Pro", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", '微软雅黑', '思源黑体', SYHT, "WenQuanYi Micro Hei", serif !default;
+$serif-secondary: 'IBM Plex Serif', Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
+$sans-serif: 'IBM Plex Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
+$monospaced: 'IBM Plex Mono', Menlo, Monaco, monospace !default;
+$code-font: 400 1.125rem/1.75 'IBM Plex Mono', SFMono-Regular, Consolas, Liberation Mono,Menlo, monospace;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
