@@ -7,10 +7,14 @@
 main,
 footer,
 .nav-container {
-  display: block;
   margin: 0 auto;
   max-width: 800px;
   width: 80%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -38,9 +42,9 @@ footer,
 
   ul {
     list-style-type: none;
-    margin: 1rem 0 0;
     padding: 0;
     text-align: center;
+    margin: auto 0 auto auto;
   }
 
   li {
@@ -74,7 +78,6 @@ footer,
 
     ul {
       bottom: 0;
-      position: absolute;
       right: 0;
     }
   }
